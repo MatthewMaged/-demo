@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>EgyBeast | Login</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <div class="bg-img">
+        <div class="cont">
+            <img class="one" src="10.png">
+        </div>
+        <div class="content">
+            <header>Login Here</header>
+            <form action="#">
+                <div class="field space">
+                    <span class="fa fa-user"></span>
+                    <input type="text" required placeholder="@egybeast.com">
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input id="password" type="password" class="password" required placeholder="Password">
+                    <span class="show"><i id="eye" onclick="toggle()" class="fas fa-eye"></i></span>
+                </div>
+                <div class="pass">
+                    <a href="#">Forget Password ?</a>
+                </div>
+                <div class="field">
+                    <input type="submit" value="LOGIN">
+                </div>            
+                <div class="login">Or login with</div>
+                <div class="link">
+                    <div class="facebook">
+                        <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                    </div>
+                    <div class="google">
+                        <i class="fab fa-google-plus"><span>Google</span></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+var state= false;
+function toggle(){
+    if(state){
+	document.getElementById("password").setAttribute("type","password");
+	document.getElementById("eye").style.color='#7a797e';
+	state = false;
+     }
+     else{
+	document.getElementById("password").setAttribute("type","text");
+	document.getElementById("eye").style.color='#5887ef';
+	state = true;
+     }
+}
+</script>
+
+</body>
+</html>
+
